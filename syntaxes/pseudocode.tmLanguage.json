@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pseudocode",
+	"patterns": [
+	  {
+		"include": "#keywords"
+	  },
+	  {
+		"include": "#strings"
+	  },
+	  {
+		"include": "#comments"
+	  }
+	],
+	"repository": {
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.pseudocode",
+			"match": "\\b(ΕΑΝ|ΑΛΛΙΩΣ|ΥΠΟΛΟΓΙΣΕ|ΓΙΑ|ΕΠΑΝΑΛΗΨΗ|ΔΙΑΒΑΣΕ|ΤΥΠΩΣΕ|ΕΝΩΣΩ|ΜΕΧΡΙ|ΕΠΑΝΑΛΑΒΕ|EOLN|AND|OR|ΕΝΟΣΩ|-ΤΕΛΟΣ)\\b"
+		  },
+		  {
+			"name": "keyword.type.pseudocode",
+			"match": "\\b(INTEGER|REAL|LOGIC|CHAR|ARRAY)\\b"
+		  },
+		  {
+			"name": "keyword.alg.pseudocode",
+			"match": "\\b(ΑΛΓΟΡΙΘΜΟΣ)\\b"
+		  },
+		  {
+			"name": "keyword.data.pseudocode",
+			"match": "\\b(ΑΡΧΗ|ΤΕΛΟΣ|-ΔΙΑΔΙΚΑΣΙΑΣ|ΔΕΔΟΜΕΝΑ|ΣΤΑΘΕΡΕΣ|ΔΙΑΔΙΚΑΣΙΑ|ΔΙΕΠΑΦΗ|ΕΙΣΟΔΟΣ|ΕΞΟΔΟΣ|ΣΥΝΑΡΤΗΣΗ|-ΣΥΝΑΡΤΗΣΗΣ)\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"name": "string.quoted.double.pseudocode",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.pseudocode",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  "comments": {
+		"patterns": [
+		  {
+			"name": "comment.block.pseudocode",
+			"begin": "/\\*",
+			"end": "\\*/",
+			"patterns": [
+			  {
+				"name": "comment.block.documentation.pseudocode",
+				"match": "\\b(EOLN)\\b"
+			  }
+			]
+		  }
+		]
+	  }
+	},
+	"scopeName": "source.greek-pseudocode"
+  }
+  

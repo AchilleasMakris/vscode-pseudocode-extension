@@ -1,0 +1,39 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "Greek Pseudocode Theme",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1E1E1E",
+    "editor.foreground": "#d4d4d4"
+  },
+  "tokenColors": [
+    {
+      "scope": "keyword.control.pseudocode",
+      "settings": {
+        "foreground": "#569CD6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.type",
+      "settings": {
+        "foreground": "#da0cb7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.alg",
+      "settings": {
+        "foreground": "#2b95afcf",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.data.pseudocode",
+      "settings": {
+        "foreground": "#C586C0",
+        "fontStyle": "bold"
+      }
+    }   
+  ]
+}

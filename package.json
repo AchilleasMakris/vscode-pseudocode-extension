@@ -1,0 +1,50 @@
+{
+  "name": "greekpseudocode",
+  "displayName": "greekpseudocode",
+  "publisher": "GreekPseudoCode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AchilleasMakris/vscode-pseudocode-extension"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "pseudocode",
+    "pseudoglossa",
+    "pseudwglwssa",
+    "eap",
+    "pseudo"
+  ],
+  "description": "Highlight the Pseudocode in Greek",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "pseudocode",
+        "aliases": ["Pseudocode", "pseudocode"],
+        "extensions": [".eap"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pseudocode",
+        "scopeName": "source.greek-pseudocode",
+        "path": "./syntaxes/pseudocode.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Greek Pseudocode Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/GreekPseudocodeTheme-color-theme.json"
+      }
+    ]
+  }
+}
