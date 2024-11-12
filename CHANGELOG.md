@@ -1,9 +1,11 @@
-# Change Log
+# Changelog
 
-All notable changes to the "greekpseudocode" extension will be documented in this file.
+Όλες οι σημαντικές αλλαγές σε αυτό το project θα καταγράφονται εδώ.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.1] - 12/11/2024
+### Προσθήκες
+- Προστέθηκαν keywords στο αρχείο `package.json` για να είναι πιο εύκολα ανιχνεύσιμο το extension.
+- Δημιουργήθηκε git repository ώστε οι χρήστες να έχουν πρόσβαση στον κώδικα.
 
-## [Unreleased]
-
-- Initial release
+### Διορθώσεις
+- Επιδιορθώθηκε το λάθος στο αρχειο pseudocode.tmLanguage.json (πρόσθετο `|`) για το σωστό χρωματισμό των keywords.
