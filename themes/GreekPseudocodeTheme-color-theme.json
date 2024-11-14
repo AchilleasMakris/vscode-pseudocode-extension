@@ -10,29 +10,25 @@
     {
       "scope": "keyword.control.pseudocode",
       "settings": {
-        "foreground": "#569CD6",
-        "fontStyle": "bold"
+        "foreground": "#569CD6"
       }
     },
     {
       "scope": "keyword.type",
       "settings": {
-        "foreground": "#da0cb7",
-        "fontStyle": "bold"
+        "foreground": "#da0cb7"
       }
     },
     {
       "scope": "keyword.alg",
       "settings": {
-        "foreground": "#2b95afcf",
-        "fontStyle": "bold"
+        "foreground": "#2b95afcf"
       }
     },
     {
       "scope": "keyword.data.pseudocode",
       "settings": {
-        "foreground": "#C586C0",
-        "fontStyle": "bold"
+        "foreground": "#C586C0"
       }
     }   
   ]
