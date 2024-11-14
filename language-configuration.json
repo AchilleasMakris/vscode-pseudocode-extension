@@ -1,34 +1,44 @@
 {
     "comments": {
-        // symbol used for single line comment. Remove this entry if your language does not support line comments
-        "lineComment": "//",
-        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
-        "blockComment": [ "/*", "*/" ]
+      "lineComment": "//",
+      "blockComment": ["/*", "*/"]
     },
-    // symbols used as brackets
     "brackets": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"]
+      ["{", "}"],
+      ["[", "]"],
+      ["(", ")"]
     ],
-    // symbols that are auto closed when typing
     "autoClosingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
-    ],
-    // symbols that can be used to surround a selection
-    "surroundingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
+      { "open": "{", "close": "}" },
+      { "open": "[", "close": "]" },
+      { "open": "(", "close": ")" },
+      { "open": "'", "close": "'", "notIn": ["string", "comment"] },
+      { "open": "\"", "close": "\"", "notIn": ["string"] },
+      { "open": "`", "close": "`", "notIn": ["string", "comment"] },
+      { "open": "/**", "close": " */", "notIn": ["string"] }
     ],
     "indentationRules": {
-       "increaseIndentPattern": "^(.*(ΑΡΧΗ|ΔΕΔΟΜΕΝΑ|ΕΑΝ|ΓΙΑ|ΕΝΟΣΩ|ΑΛΛΙΩΣ|ΜΕΧΡΙ|ΜΕ ΒΗΜΑ|ΕΠΑΝΑΛΑΒΕ|ΤΟΤΕ|ΣΤΑΘΕΡΕΣ|ΕΙΣΟΔΟΣ|ΕΞΟΔΟΣ).*|.*(ΑΛΛΙΩΣ|ΜΕΧΡΙ|ΕΠΑΝΑΛΑΒΕ|ΤΟΤΕ).*)$",
-        "decreaseIndentPattern": "^(.*(ΕΑΝ-ΤΕΛΟΣ|ΕΠΑΝΑΛΑΒΕ-ΤΕΛΟΣ|ΕΝΟΣΩ-ΤΕΛΟΣ|ΤΕΛΟΣ-ΔΙΑΔΙΚΑΣΙΑΣ|ΓΙΑ-ΤΕΛΟΣ|ΤΕΛΟΣ).*)$"
-      }
-}
+      "increaseIndentPattern": "^(.*(ΑΡΧΗ|ΔΕΔΟΜΕΝΑ|ΕΑΝ|ΓΙΑ|ΕΝΟΣΩ|ΑΛΛΙΩΣ|ΜΕΧΡΙ|ΜΕ ΒΗΜΑ|ΕΠΑΝΑΛΑΒΕ|ΤΟΤΕ|ΣΤΑΘΕΡΕΣ|ΕΙΣΟΔΟΣ|ΕΞΟΔΟΣ).*)$",
+      "decreaseIndentPattern": "^(.*(ΕΑΝ-ΤΕΛΟΣ|ΕΠΑΝΑΛΑΒΕ-ΤΕΛΟΣ|ΕΝΟΣΩ-ΤΕΛΟΣ|ΤΕΛΟΣ-ΔΙΑΔΙΚΑΣΙΑΣ|ΓΙΑ-ΤΕΛΟΣ|ΤΕΛΟΣ).*)$"
+    },
+    "onEnterRules": [
+      {
+        "beforeText": "^(.*(ΕΑΝ-ΤΕΛΟΣ|ΓΙΑ-ΤΕΛΟΣ|ΕΠΑΝΑΛΑΒΕ-ΤΕΛΟΣ|ΕΝΟΣΩ-ΤΕΛΟΣ|ΑΛΛΙΩΣ-ΤΕΛΟΣ|ΜΕΧΡΙ-ΤΕΛΟΣ).*)$",
+        "action": { "indent": "none" }
+      },
+      {
+        "previousLineText": "^(.*(ΤΕΛΟΣ).*)$",
+        "action": { "indent": "outdent" }
+      },
+      {
+        "beforeText": "^(.*(ΕΑΝ|ΓΙΑ|ΕΠΑΝΑΛΑΒΕ|ΕΝΟΣΩ|ΑΛΛΙΩΣ|ΜΕΧΡΙ).*)$",
+        "action": { "indent": "indent" }
+      },
+        {
+            "beforeText": "^(\\s*)$",
+            "action": {
+              "indent": "none"
+            }
+        }
+    ]
+  }
