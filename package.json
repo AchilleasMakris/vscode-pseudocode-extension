@@ -16,12 +16,12 @@
     "pseudo"
   ],
   "description": "Highlight the Pseudocode in Greek",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "engines": {
     "vscode": "^1.95.0"
   },
   "categories": [
-    "Programming Languages"
+    "Formatters"
   ],
   "contributes": {
     "languages": [
