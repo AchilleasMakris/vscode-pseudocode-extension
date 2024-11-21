@@ -8,6 +8,7 @@
   },
   "keywords": [
     "theme",
+    "Formatters",
     "dark theme",
     "pseudocode",
     "pseudoglossa",
@@ -49,6 +50,12 @@
         "label": "Greek Pseudocode Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/GreekPseudocodeTheme-color-theme.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "pseudocode",
+        "path": "./snippets.json"
       }
     ]
   }
