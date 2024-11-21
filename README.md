@@ -1,5 +1,6 @@
-**`Greek Pseudocode Extension`**
+# Greek Pseudocode Extension
 
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/greekpseudocode.greekpseudocode)](https://marketplace.visualstudio.com/items?itemName=greekpseudocode.greekpseudocode)
 ## Εισαγωγή
 
 Ένα extension σχεδιασμένο ειδικά για την ψευδογλώσσα του Ανοικτού Πανεπιστημίου, που προσφέρει χρωματισμό για λέξεις-κλειδιά και άλλες συντακτικές δομές. Η ψευδογλώσσα αυτή διευκολύνει την εκμάθηση προγραμματισμού και την επίλυση προβλημάτων και είναι ιδανική για αρχάριους και προχωρημένους προγραμματιστές.
