@@ -16,7 +16,7 @@
     "pseudo"
   ],
   "description": "Highlight the Pseudocode in Greek",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "engines": {
     "vscode": "^1.95.0"
   },
