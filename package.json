@@ -18,7 +18,7 @@
     "pseudo"
   ],
   "description": "Highlight the Pseudocode in Greek",
-  "version": "1.6.6",
+  "version": "1.7.0",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -58,6 +58,29 @@
         "language": "pseudocode",
         "path": "./snippets.json"
       }
-    ]
-  }
+    ],
+    "commands": [
+      {
+        "command": "greekpseudocode.runEap",
+        "title": "Run EAP Program",
+        "icon": "icon/play-dark.svg"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "greekpseudocode.runEap",
+          "when": "resourceExtname == .eap",
+          "group": "navigation"
+        }
+      ],
+      "statusBar/primary": [
+        {
+          "command": "greekpseudocode.runEap",
+          "when": "resourceExtname == .eap"
+        }
+      ]
+    }
+  },
+  "main": "./extension.js"
 }
