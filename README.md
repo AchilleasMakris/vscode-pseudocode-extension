@@ -16,6 +16,9 @@
 ### Παράδειγμα Συνθήκης
 ![](https://i.imgur.com/v33yVRq.gif)
 
+### Παράδειγμα Compile & Run
+![](https://i.imgur.com/FdbcR69.gif)
+
 ## Τεχνολογίες
 
 Το project αυτό έχει δημιουργηθεί με:
