@@ -12,6 +12,16 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			]
-		}
+		},
+		{
+			"label": "Compile EAP File",
+			"type": "shell",
+			"command": "pli10",
+			"args": [
+			  "${file}"
+			],
+			"problemMatcher": [],
+			"detail": "Compile the EAP file using pli10"
+		  }
 	]
 }

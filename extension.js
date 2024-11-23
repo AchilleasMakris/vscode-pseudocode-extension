@@ -8,30 +8,27 @@ function activate(context) {
       const editor = vscode.window.activeTextEditor;
 
       if (editor) {
-        const filePath = editor.document.fileName;
-        const fileDir = path.dirname(filePath);
-        const fileName = path.basename(filePath);
-        const exeFileName = `${fileName}.exe`;
+        const filePath = editor.document.fileName; // Πλήρης διαδρομή αρχείου .eap
+        const fileDir = path.dirname(filePath); // Διαδρομή φακέλου
+        const fileName = path.basename(filePath); // Όνομα αρχείου
+        const exeFileName = `${fileName}.exe`; // Δημιουργία ονόματος .eap.exe αρχείου
 
         // Δημιουργία τερματικού
-        const terminal = vscode.window.createTerminal("EAP Runner");
+        const terminal = vscode.window.createTerminal("EAP Runner", "cmd.exe");
         terminal.show();
 
-        // Πηγαίνουμε στον φάκελο του αρχείου
-        terminal.sendText(`cd "${fileDir}"`);
-
         // Μεταγλώττιση του .eap αρχείου
-        terminal.sendText(`pli10 "${fileName}"`, true);
+        terminal.sendText(`pli10 "${filePath}"`, true);
 
-        // Προσθήκη αυτόματου Enter μετά την μεταγλώττιση
+        // Προσθήκη Enter για ολοκλήρωση μεταγλώττισης
         setTimeout(() => {
-          terminal.sendText("", true); // Αποστολή Enter
-        }, 1000); // Αναμονή 1 δευτερολέπτου (εφόσον χρειάζεται χρόνος για το μήνυμα)
+          terminal.sendText("", true);
+        }, 1000);
 
-        // Εκτέλεση του .exe αρχείου
+        // Εκτέλεση του .eap.exe αρχείου
         setTimeout(() => {
-          terminal.sendText(`"${exeFileName}"`);
-        }, 1500); // Αναμονή για να βεβαιωθούμε ότι ολοκληρώθηκε η μεταγλώττιση
+          terminal.sendText(`"${exeFileName}"`, true); // Χρήση πλήρους ονόματος με .eap.exe
+        }, 1500);
       } else {
         vscode.window.showErrorMessage("Δεν υπάρχει ενεργό αρχείο .eap για εκτέλεση.");
       }

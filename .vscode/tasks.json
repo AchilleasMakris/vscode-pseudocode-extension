@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile EAP File",
+      "type": "shell",
+      "command": "pli10",
+      "args": [
+        "${file}"
+      ],
+      "problemMatcher": [],
+      "detail": "Compile the EAP file using pli10"
+    },
+    {
+      "label": "Run EAP File",
+      "type": "shell",
+      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "problemMatcher": [],
+      "detail": "Run the compiled EAP file"
+    }
+  ]
+}
