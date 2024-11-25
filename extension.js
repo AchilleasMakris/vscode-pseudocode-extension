@@ -4,6 +4,23 @@ const path = require("path");
 let terminal;
 
 function activate(context) {
+  const config = vscode.workspace.getConfiguration('greekpseudocode');
+  const isMuted = config.get('muteNotification', false);
+
+  if (!isMuted) {
+    vscode.window.showInformationMessage(
+      "Προστέθηκαν Snippets βοήθειας του κώδικα! Μάθετε περισσότερα για τη λειτουργία του Extension.",
+      "Μάθε περισσότερα",
+      "Mute notification"
+    ).then(selection => {
+      if (selection === "Μάθε περισσότερα") {
+        vscode.env.openExternal(vscode.Uri.parse("https://github.com/AchilleasMakris/vscode-pseudocode-extension/wiki"));
+      } else if (selection === "Mute notification") {
+        config.update('muteNotification', true, vscode.ConfigurationTarget.Global);
+      }
+    });
+  }
+
   let runEapCommand = vscode.commands.registerCommand(
     "greekpseudocode.runEap",
     function () {

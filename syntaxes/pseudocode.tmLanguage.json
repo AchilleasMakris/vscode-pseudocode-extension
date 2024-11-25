@@ -21,7 +21,7 @@
 		  },
 		  {
 			"name": "keyword.type.pseudocode",
-			"match": "\\b(INTEGER|REAL|LOGIC|CHAR|ARRAY|BOOLEAN|STRING)\\b"
+			"match": "\\b(INTEGER|REAL|LOGIC|CHAR|ARRAY|BOOLEAN)\\b"
 		  },
 		  {
 			"name": "keyword.alg.pseudocode",
