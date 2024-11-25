@@ -56,3 +56,7 @@
 - Προστέθηκαν οι εντολές ΤΥΠΩΣΕ() και ΔΙΑΒΑΣΕ() στα Snippets
 - Διόρθωση των εντολών στο αρχείο `language-configuration.json`.
 - Update Wiki και προσθήκη Popup Message για την επεξήγηση του Extension.
+
+## [1.7.7] - 25/11/2024
+### Διόρθωση
+- Αλλαγή του Icon στο Marketplace

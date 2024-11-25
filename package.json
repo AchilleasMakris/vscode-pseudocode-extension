@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/AchilleasMakris/vscode-pseudocode-extension"
   },
-  "icon": "icon/Pseudoglwssa.jpg",
+  "icon": "icon/icon.png",
   "keywords": [
     "theme",
     "Formatters",
@@ -18,7 +18,7 @@
     "pseudo"
   ],
   "description": "Highlight the Pseudocode in Greek",
-  "version": "1.7.6",
+  "version": "1.7.7",
   "engines": {
     "vscode": "^1.85.0"
   },
