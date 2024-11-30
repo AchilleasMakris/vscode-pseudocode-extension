@@ -18,9 +18,9 @@
     "pseudo"
   ],
   "description": "Highlight the Pseudocode in Greek",
-  "version": "1.7.8",
+  "version": "1.7.9",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.95.0"
   },
   "categories": [
     "Formatters"
@@ -46,13 +46,6 @@
         "path": "./syntaxes/pseudocode.tmLanguage.json"
       }
     ],
-    "themes": [
-      {
-        "label": "Greek Pseudocode Theme",
-        "uiTheme": "vs-dark",
-        "path": "./themes/GreekPseudocodeTheme-color-theme.json"
-      }
-    ],
     "configurationDefaults": {
       "[pseudocode]": {
         "files.encoding": "windows1253"
@@ -62,6 +55,44 @@
       {
         "language": "pseudocode",
         "path": "./snippets.json"
+      }
+    ],
+    "tokenColors": [
+      {
+        "scope": "source.greek-pseudocode keyword.control.pseudocode",
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
+        "scope": "source.greek-pseudocode keyword.type.pseudocode",
+        "settings": {
+          "foreground": "#DA0CB7"
+        }
+      },
+      {
+        "scope": "source.greek-pseudocode keyword.alg.pseudocode",
+        "settings": {
+          "foreground": "#2B95AFCF"
+        }
+      },
+      {
+        "scope": "source.greek-pseudocode keyword.data.pseudocode",
+        "settings": {
+          "foreground": "#C586C0"
+        }
+      },
+      {
+        "scope": "source.greek-pseudocode string.quoted.double.pseudocode",
+        "settings": {
+          "foreground": "#CE9178"
+        }
+      },
+      {
+        "scope": "source.greek-pseudocode comment.block.pseudocode",
+        "settings": {
+          "foreground": "#6A9955"
+        }
       }
     ],
     "commands": [
