@@ -1,11 +1,16 @@
 {
   "name": "greekpseudocode",
-  "displayName": "greekpseudocode",
+  "displayName": "Greek Pseudocode",
   "publisher": "GreekPseudoCode",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AchilleasMakris/vscode-pseudocode-extension"
+  "version": "1.8.0",
+  
+  "engines": {
+    "vscode": "^1.95.0"
   },
+  "description": "Highlight the Pseudocode in Greek",
+  "categories": [
+    "Programming Languages"
+  ],
   "icon": "icon/icon.png",
   "keywords": [
     "theme",
@@ -17,25 +22,17 @@
     "eap",
     "pseudo"
   ],
-  "description": "Highlight the Pseudocode in Greek",
-  "version": "1.7.9",
-  "engines": {
-    "vscode": "^1.95.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AchilleasMakris/vscode-pseudocode-extension"
   },
-  "categories": [
-    "Formatters"
-  ],
+  "main": "./extension.js",
   "contributes": {
     "languages": [
       {
         "id": "pseudocode",
-        "aliases": [
-          "Pseudocode",
-          "pseudocode"
-        ],
-        "extensions": [
-          ".eap"
-        ],
+        "aliases": ["Pseudocode", "pseudocode"],
+        "extensions": [".eap"],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -100,23 +97,31 @@
         "command": "greekpseudocode.runEap",
         "title": "Run EAP Program",
         "icon": "icon/play-dark.svg"
+      },
+      {
+        "command": "greekpseudocode.openManual",
+        "title": "Open Pseudocode Manual"
       }
     ],
     "menus": {
+      "commandPalette": [
+        {
+          "command": "greekpseudocode.openManual",
+          "when": "true"
+        }
+      ],
       "editor/title": [
         {
           "command": "greekpseudocode.runEap",
           "when": "resourceExtname == .eap",
           "group": "navigation"
-        }
-      ],
-      "statusBar/primary": [
+        },
         {
-          "command": "greekpseudocode.runEap",
-          "when": "resourceExtname == .eap"
+          "command": "greekpseudocode.openManual",
+          "when": "resourceExtname == .eap",
+          "group": "navigation"
         }
       ]
     }
-  },
-  "main": "./extension.js"
+  }
 }
