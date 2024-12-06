@@ -2,14 +2,14 @@
   "name": "greekpseudocode",
   "displayName": "Greek Pseudocode",
   "publisher": "GreekPseudoCode",
-  "version": "1.8.3",
+  "version": "1.8.4",
   
   "engines": {
     "vscode": "^1.95.0"
   },
   "description": "Highlight the Pseudocode in Greek",
   "categories": [
-    "Programming Languages"
+    "Formatters"
   ],
   "icon": "icon/icon.png",
   "keywords": [
