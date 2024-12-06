@@ -2,7 +2,7 @@
   "name": "greekpseudocode",
   "displayName": "Greek Pseudocode",
   "publisher": "GreekPseudoCode",
-  "version": "1.8.0",
+  "version": "1.8.1",
   
   "engines": {
     "vscode": "^1.95.0"
