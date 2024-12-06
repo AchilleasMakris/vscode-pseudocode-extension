@@ -22,8 +22,8 @@
 
 <h2> <u>💾  Εγκατάσταση του Compiler.</u> </h2>
 
-<table><tr><td><a href="https://youtu.be/bGu54aX8jwU"><img width="300px" src="https://i.imgur.com/wfGwc43.png"></a></td>
-<td><a href="https://www.youtube.com/watch?v=FUcjTX92cM8">Εγκατάσταση του Compiler του ΕΑΠ και του GreekPseudoCode Extension</a><br/></td></tr></table
+<table><tr><td><a href="https://www.youtube.com/watch?v=EghV1phuO7s"><img width="300px" src="https://i.imgur.com/wfGwc43.png"></a></td>
+<td><a href="https://www.youtube.com/watch?v=EghV1phuO7s">Εγκατάσταση του Compiler του ΕΑΠ και του GreekPseudoCode Extension</a><br/></td></tr></table
 
 ---
 ---
